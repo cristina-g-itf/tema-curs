@@ -1,0 +1,15 @@
+h3 {
+  text-align: center;
+  color: green;
+  font: bold 50px 'Fantasy', Papyrus;
+  }
+a:link, a:visited {
+  color: greenyellow;
+  text-decoration: none;
+  font-size: 20px;
+}
+a:hover {
+  color: darkred;
+  text-decoration: none;
+  font-size: 30px;
+}
