@@ -48,10 +48,7 @@ th, td {
 .right{
     text-align: right;
 }
-ul.a {
+ul{
     list-style-type: circle;
-}
-#block{
-    display: block;
 }
 
