@@ -23,7 +23,10 @@
 h1{
     color: red;
     font: bold 40px Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
 }
+
 p {
     color: black;
 }
