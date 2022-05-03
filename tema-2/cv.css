@@ -1,0 +1,57 @@
+.flex-container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: flex-start;
+    margin: 60px 70px 70px 70px;
+    font: bold 16px Arial, Helvetica, sans-serif;
+}
+.flex-container div{
+    display: inline;
+    width: 100%;
+}
+
+.img {
+    margin: 10px 20px 5px 20px ;
+    max-width: 10%;
+    height: 10%;
+    border-radius: 50%;
+    display:block;
+    float: left;
+}
+h1{
+    color: red;
+    font: bold 40px Arial, Helvetica, sans-serif;
+}
+p {
+    color: black;
+}
+.subtitle{
+    color: red;
+    background-color: lightgray;
+    font: bold 25px Arial, Helvetica, sans-serif;
+    transition: font-size 3s;
+}
+.subtitle:hover{
+    font: bold 30px Arial, Helvetica, sans-serif
+}
+table {
+    margin-left: 20px;
+    margin-right: 60px;
+    font-size: larger;
+    width: 95%;
+}
+th, td {
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+ul.a {
+    list-style-type: circle;
+}
+#block{
+    display: block;
+}
+
