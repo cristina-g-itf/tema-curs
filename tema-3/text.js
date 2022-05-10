@@ -3,8 +3,9 @@ let r2 = '$12,450 is a lot of money<br />';
 let r3 = 'Jane Smith plans to buy a Toyota Yaris.<br />';
 let r4 = 'Jane Smith will use her $12,450 to buy a Toyota Yaris.<br />';
 let r5 = '$12,450 is a lot of money for a Toyota Yaris.<br />'
+let a = r2.length
 let e = '=';
-let result = e.repeat(50); //repeat element
+let result = e.repeat(a); //repeat element
 
 function myFunction(a, b, c, d, e) {    //functia de concatenare
     return a + b + c + d + e;
