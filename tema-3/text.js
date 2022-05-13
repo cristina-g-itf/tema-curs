@@ -23,7 +23,6 @@ theDiv2.innerHTML = myFunction(r2, r5, r3, r1, r4);
 let theDivBisElement = document.getElementById('theDivBis');
 theDivBis.innerHTML = result;
 
-
 let theDiv3Element = document.getElementById('theDiv3');//al treilea text
 theDiv3.innerHTML = myFunction(r3, r5, r4, r1, r2);
 
