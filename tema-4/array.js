@@ -36,7 +36,7 @@ for(let i = 0; i < mySecondArray.length; i++){
     }
 }
 
-for (let i = 0; i < mySecondArray.length; i++) {
+for (let i = 0; i < mySecondArray.length; i++) {    //punem in fiecare mySecondArray[i] un array de 3 elemente
     let smallArray = [];
     if (mySecondArray[i] <= 4) {
       for (let j = 0; j < 3; j++) {
