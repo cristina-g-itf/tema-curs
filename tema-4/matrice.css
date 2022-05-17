@@ -1,0 +1,11 @@
+div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: left;
+    color: green;
+    font-style: 50px bold;
+    margin: 50px;
+}
+
