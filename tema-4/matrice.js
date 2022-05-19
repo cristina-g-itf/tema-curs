@@ -14,14 +14,16 @@ for(let i = 0; i < n; i++){        //se parcurg nr de randuri
             if(j % 2 === 0){        //daca j PAR
                 a[i][j] = 1;        //daca (i,j) PARE afiseaza 0
             }else{
-                a[i][j] = 0;}       //daca i PAR si j impar afiseaza 1
+                a[i][j] = 0;       //daca i PAR si j impar afiseaza 1
+            }
         }else{
             if(j % 2 === 0){       
                 a[i][j] = 0;         //daca i impar si j PAR afiseaza 1
             }else{
-                a[i][j] = 1;}        //daca (i,j) impare afiseaza 0
+                a[i][j] = 1;        //daca (i,j) impare afiseaza 0
+            }
         }
-        if(i === x-1){ 
+        if(i === x - 1){ 
             a[i][j] = '=';           //daca i=x afiseaza =
         }
         a[i][j+1] = newRow;          //rand nou
@@ -33,6 +35,16 @@ for(let i = 0; i < n; i++){        //se parcurg nr de randuri
 console.log(a)
 
 
-let theMatrixElement = document.getElementById('theMatrix');
-document.getElementById("theMatrix").style.fontSize = "large"
-theMatrix.innerHTML = a;
+
+let theParent = document.getElementById('theParent');
+for(let i = 0; i < a.length; i++){
+    let theLine = document.createElement('div');
+    theLine.classList.add('line')
+    for(let j = 0; j < a[i].length; j++){
+        let theCell = document.createElement('div');
+        theCell.innerHTML = a[i][j];
+        theLine.appendChild(theCell);
+    }
+    theParent.appendChild(theLine);
+}
+
