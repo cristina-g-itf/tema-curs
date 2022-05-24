@@ -78,7 +78,7 @@ function longestWord(string) {
     });
     return word;
 }
-let ex3 = 'Diclordifeniltriclormetilmetan is one of the longest words in romanian language'
+let ex3 = 'The word Diclordifeniltriclormetilmetan is one of the longest words in romanian language'
 
 console.log(longestWord(ex3));
 
