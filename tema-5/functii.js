@@ -40,9 +40,7 @@ let string = prompt('2.Enter a string: ');
 function palindrome(string) {
     
     for (let i = 0; i < string.length; i++) {
-
-        // check if first and last string are same
-        if (string[i] !== string[string.length - 1 - i]) {
+        if (string[i] !== string[string.length - i]) {
             return 'It is not a palindrome';
         } else {
             return 'It is a palindrome';
@@ -143,7 +141,7 @@ let choiceObj = {
     addition: function add() {
         let sum = 0;
         for (let i = 0; i < array.length; i++) {
-            sum += array[i];
+            sum = sum + array[i];
         }
         return sum
     },
