@@ -38,14 +38,18 @@ theExercise1.appendChild(theResult1);
 // program to check if the string is palindrome or not 
 
 let string = prompt('2.Enter a string: ');
+let isPalindorme = true;
 function palindrome(string) {
 
     for (let i = 0; i < string.length; i++) {
-        if (string[i] !== string[string.length - i]) {
-            return 'It is not a palindrome';
-        } else {
-            return 'It is a palindrome';
+        if (string.charAt(i) !== string.charAt(string.length - i - 1)) {
+            isPalindrome = false;
         }
+    }
+    if(isPalindorme) {
+        return 'Is a palindrome';
+    } else {
+        return 'Is not a palindrome';
     }
 }
 
