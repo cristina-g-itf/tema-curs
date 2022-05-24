@@ -39,7 +39,7 @@ theExercise1.appendChild(theResult1);
 
 let string = prompt('2.Enter a string: ');
 function palindrome(string) {
-    
+
     for (let i = 0; i < string.length; i++) {
         if (string[i] !== string[string.length - i]) {
             return 'It is not a palindrome';
@@ -118,7 +118,7 @@ function factorial(z) {
             return '-1';
         } else {
             return factorial(z - 1) * z;
-            
+
         }
     }
 }
