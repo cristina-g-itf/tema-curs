@@ -1,6 +1,7 @@
 //4 / x + 5 - x * (34 - x + 10) / 6 + x
 
 let x = prompt("1.Please enter a number for our exercise:");
+x = parseInt(x)
 
 function addition(var1, var2) {
     let sum = var1 + var2;
