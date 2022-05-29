@@ -146,6 +146,7 @@ let choiceObj = {
     addition: function add() {
         let sum = 0;
         for (let i = 0; i < array.length; i++) {
+            array[i] = parseInt(arrai[i])
             sum = sum + array[i];
         }
         return sum
