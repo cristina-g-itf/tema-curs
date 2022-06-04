@@ -63,5 +63,42 @@ buttonStep5.addEventListener('click', function () {
 }
 )
 
+//forth button
+
+let n = prompt('Please insert the number of buttons you want to create: ')
+n = parseInt(n);
+let buttons = [];
+buttons.length = n;
+let text = ' '
+let divButton4 = document.getElementById('forthButton')
+
+
+for (let i = 1; i <= n; i++) {
+  i = parseInt(i)
+  buttons[i] = createButton('Button' + i)
+  if (i === 1) {
+    divButton4.appendChild(buttons[i])
+    buttons[i].addEventListener('click', function () {
+      divButton4.appendChild(buttons[i + 1])
+    }
+    )
+
+  } else {
+    if (i < n) {
+
+      buttons[i].addEventListener('click', function () {
+        divButton4.appendChild(buttons[i + 1])
+      }
+      )
+    } else {
+      buttons[i].addEventListener('click', function () {
+        alert('You have reach the end, there are no more buttons')
+      }
+      )
+    }
+
+  }
+}
+
 
 
