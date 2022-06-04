@@ -63,14 +63,14 @@ buttonStep5.addEventListener('click', function () {
 }
 )
 
-//forth button
+//fourth button
 
 let n = prompt('Please insert the number of buttons you want to create: ')
 n = parseInt(n);
 let buttons = [];
 buttons.length = n;
 let text = ' '
-let divButton4 = document.getElementById('forthButton')
+let divButton4 = document.getElementById('fourthButton')
 
 
 for (let i = 1; i <= n; i++) {
