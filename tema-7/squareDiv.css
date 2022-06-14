@@ -1,0 +1,27 @@
+.upRightCorner{
+
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: blue;
+    margin: 50px 0px 0px 50px;
+}
+.downLeftCorner{
+
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    bottom: 0px;
+    right: 0px;
+    background-color: blue;
+    margin: 0px 50px 50px 0px;
+}
+
+@media only screen and (max-width: 500px) {
+    .upRightCorner{
+        margin: 5px 0px 0px 5px;
+    }
+    .downLeftCorner{
+        margin: 0px 5px 5px 0px;
+    }
+}
