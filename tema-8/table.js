@@ -10,12 +10,14 @@ let crew = {
             .then(function (response) {
                 
                 crew.data.crewMembers = response.data;
+                crew.createTable();
             })
             .catch(function (error) {
 
                 console.log(error);
             })
     },
+
     createTable: function () {
         let table = document.querySelector('.table tbody')
         for (let i = 0; i < crew.data.crewMembers.length; i++) {
@@ -31,16 +33,8 @@ let crew = {
             row.appendChild(thTable);
             row.appendChild(tdTable);
             table.appendChild(row)
-
         }
-        
     }
-
-
-
-
 }
 
-
 crew.init();
-crew.createTable()
