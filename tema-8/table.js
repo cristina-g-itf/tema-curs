@@ -33,7 +33,7 @@ let crew = {
             table.appendChild(row)
 
         }
-        return table;
+        
     }
 
 
@@ -42,4 +42,4 @@ let crew = {
 }
 
 
-crew.createTable();
+crew.init().createTable();
