@@ -42,4 +42,4 @@ let crew = {
 }
 
 
-crew.init().createTable();
+crew.createTable();
