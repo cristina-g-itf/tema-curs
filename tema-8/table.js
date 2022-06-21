@@ -42,4 +42,5 @@ let crew = {
 }
 
 
-crew.createTable();
+crew.init();
+crew.createTable()
