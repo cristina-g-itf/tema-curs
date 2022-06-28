@@ -1,0 +1,13 @@
+#date{
+    margin: 30px;
+    background-color: whitesmoke;
+    size: auto;
+    position: absolute;
+}
+div{
+    background-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    
+}
