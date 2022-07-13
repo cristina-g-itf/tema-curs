@@ -23,10 +23,8 @@ let crew = {
         for (let i = 0; i < crew.data.crewMembersImg.length; i++) {
 
             let divForEachImg = document.createElement('div');
-            divForEachImg.style.height = '300px';
-            divForEachImg.style.width = '300px';
-            divForEachImg.style.margin = '5px';
-            divForEachImg.style.backgroundPosition = 'center';
+            divForEachImg.setAttribute('id', 'divCrewImg');
+            
             
 
             let img = document.createElement('img')
@@ -34,9 +32,8 @@ let crew = {
             let crewName = crew.data.crewMembersImg[i].name;
             img.setAttribute('src', crewImg);
             img.setAttribute('alt', crewName);
-            img.style.height = 'inherit';
-            img.style.width = 'inherit';
-            img.style.objectFit = 'contain';
+            img.setAttribute('id', 'crewImg');
+
             
             divForEachImg.appendChild(img)
             imgDiv.appendChild(divForEachImg)

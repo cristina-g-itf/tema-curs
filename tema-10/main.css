@@ -22,3 +22,16 @@ div {
     justify-content: center;
     align-content: center;
 }
+#crewImg{
+    height: inherit;
+    width: inherit;
+    object-fit: contain;
+}
+#divCrewImg{
+    height: 300px;
+    width: 300px;
+    margin: 5px;
+    background-color: rgb(2, 2, 48);
+    background-position: center;
+
+}
