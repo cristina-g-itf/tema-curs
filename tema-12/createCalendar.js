@@ -18,10 +18,8 @@ let createCalendar = function (month, year) {
     document.getElementById('month').innerHTML = currentMonth
     let today = date.getDate() + ',' + year
     document.getElementById('today').innerHTML = today;
-    let noOfEmptyBox = new Date(year, month, 0).getDay()
-
     
-
+    let noOfEmptyBox = new Date(year, month, 0).getDay()
     for (let j = 0; j < noOfEmptyBox; j++) {
 
         let emptyBox = document.createElement('div')
@@ -34,6 +32,10 @@ let createCalendar = function (month, year) {
         let monthDays = document.createElement('div');
         monthDays.innerHTML = i;
         daysOfMonthDiv.appendChild(monthDays)
+        if(i === date.getDate()){
+            monthDays.setAttribute('class','circle')
+        }
+        
     }
 
     let previousMonth = document.getElementById('previousMonth');

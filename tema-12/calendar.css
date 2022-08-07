@@ -5,7 +5,6 @@ body {
     
 }
 
-
 #fullCalendarDiv {
     display: flex;
     flex-direction: column;
@@ -81,5 +80,10 @@ body {
     cursor: pointer;
   }
   
-
+.circle{
+    border-radius: 50%;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+}
   
