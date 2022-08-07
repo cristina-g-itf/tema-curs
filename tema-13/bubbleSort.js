@@ -20,51 +20,65 @@ console.log(bubbleSort(myArray))
 
 
 
-// let crew = {
+let crew = {
 
-//     data: {
-//         crewMembersImg: []
-//     },
+    data: {
+        crewMembersImg: []
+    },
 
-//     init: function () {
-//         axios
-//             .get('https://api.spacexdata.com/v4/crew')
-//             .then(function (response) {
+    init: function () {
+        axios
+            .get('https://api.spacexdata.com/v4/crew')
+            .then(function (response) {
                 
-//                 crew.data.crewMembersImg = response.data;
-//                 crew.createImage();
-                
-//             })
-//             .catch(function (error) {
+                crew.data.crewMembersImg = response.data;
+                crew.createImage(crew.data.crewMembersImg);
+                crew.pushButton()
 
-//                 console.log(error);
-//             })
-//     },
+            })
+            .catch(function (error) {
 
-//     createImage: function () {
-//         let imgDiv = document.querySelector('.img')
-//         for (let i = 0; i < crew.data.crewMembersImg.length; i++) {
+                console.log(error);
+            })
+    },
 
-//             let divForEachImg = document.createElement('div');
-//             divForEachImg.setAttribute('id', 'divCrewImg');
+    createImage: function (members) {
+        let imgDiv = document.querySelector('.img')
+        for (let i = 0; i < members.length; i++) {
+
+            let divForEachImg = document.createElement('div');
+            divForEachImg.setAttribute('id', 'divCrewImg');
             
             
 
-//             let img = document.createElement('img')
-//             let crewImg = crew.data.crewMembersImg[i].image;
-//             let crewName = crew.data.crewMembersImg[i].name;
-//             img.setAttribute('src', crewImg);
-//             img.setAttribute('alt', crewName);
-//             img.setAttribute('id', 'crewImg');
-//             crewName.setAttribute('id', 'crewName')
+            let img = document.createElement('img')
+            let crewImg = members[i].image;
+            let crewName = members[i].name;
+            img.setAttribute('src', crewImg);
+            img.setAttribute('alt', crewName);
+            img.setAttribute('id', 'crewImg');
+            // crewName.setAttribute('id', 'crewName')
             
-//             divForEachImg.appendChild(img)
-//             imgDiv.appendChild(divForEachImg)
-//         }
-//     },
-    
-// }
-// crew.init();
+            divForEachImg.appendChild(img)
+            imgDiv.appendChild(divForEachImg)
+        }
+    },
+    sortCrewMembers: function(members){
+        let localCrewArray = [];
+        for(let i = 0; i < members.length; i++){
+            localCrewArray.push({
+                image: members[i].image,
+                name: members[i].name
+            })
+            localCrewArray[i].sort()
+        }
+    },
+    pushButton: function(){
+        let button = document.querySelector('.button')
+        button.addEventListener('click', crew.sortCrewMembers(crew.data.crewMembersImg))
+    }
+}
+crew.init();
 
 
 
